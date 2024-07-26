@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "name": "${mod_displayName}",
+  "version": "${mod_version}",
+  "environment": "*",
+  "description": "${mod_description}",
+  "license": "All-Rights-Reserved",
+  "icon": "assets/example_mod/icon.png",
+  "authors": [
+    "Example Author"
+  ],
+  "mixins": [
+    "${mod_name}.mixins.json"
+  ],
+  "depends": {
+    "quantum": ">=${versions_quantum}"
+  },
+  "entrypoints": {
+    "init": [
+      "com.example.craft.mod.ExampleMod"
+    ]
+  }
+}
