@@ -6,7 +6,6 @@
   "environment": "*",
   "description": "${mod_description}",
   "license": "All-Rights-Reserved",
-  "icon": "assets/example_mod/icon.png",
   "authors": [
     "Example Author"
   ],
@@ -17,8 +16,17 @@
     "quantum": ">=${versions_quantum}"
   },
   "entrypoints": {
-    "init": [
-      "com.example.craft.mod.ExampleMod"
+    "main": [
+      {
+        "adapter": "scala",
+        "value": "com.example.quantmod.ExampleMod"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "scala",
+        "value": "com.example.quantmod.client.ExampleModClient"
+      }
     ]
   }
 }
