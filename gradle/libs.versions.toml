@@ -1,5 +1,5 @@
 [versions]
-quantum-voxel = "0.1.0-alpha.2026.06.16"
+quantum-voxel = "0.1.0-alpha.2026.06.16.1"
 fabric-language-scala = "0.3.1.+"
 
 [libraries]
