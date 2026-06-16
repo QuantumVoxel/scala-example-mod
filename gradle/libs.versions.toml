@@ -1,0 +1,9 @@
+[versions]
+quantum-voxel = "0.1.0-alpha.2026.06.16"
+fabric-language-scala = "0.3.1.+"
+
+[libraries]
+quantumvoxel-client = { group = "net.quantumvoxel", name = "client", version.ref = "quantum-voxel" }
+quantumvoxel-server = { group = "net.quantumvoxel", name = "server", version.ref = "quantum-voxel" }
+quantumvoxel-gameprovider = { group = "net.quantumvoxel", name = "gameprovider", version.ref = "quantum-voxel" }
+fabric-language-scala = { group = "net.fabricmc", name = "fabric-language-scala", version.ref = "fabric-language-scala" }

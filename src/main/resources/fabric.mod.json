@@ -1,32 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "${mod_id}",
-  "name": "${mod_displayName}",
-  "version": "${mod_version}",
-  "environment": "*",
-  "description": "${mod_description}",
-  "license": "All-Rights-Reserved",
+  "id": "examplemod",
+  "version": "${version}",
+  "name": "Example Quantum Voxel Mod",
+  "description": "",
   "authors": [
-    "Example Author"
+    "Your Name Here"
   ],
   "mixins": [
-    "${mod_name}.mixins.json"
+    "examplemod.mixins.json",
+    "examplemod.client.mixins.json"
   ],
-  "depends": {
-    "quantum": ">=${versions_quantum}"
-  },
   "entrypoints": {
     "main": [
-      {
-        "adapter": "scala",
-        "value": "com.example.quantmod.ExampleMod"
-      }
-    ],
-    "client": [
-      {
-        "adapter": "scala",
-        "value": "com.example.quantmod.client.ExampleModClient"
-      }
+      "org.example.ExampleMod"
     ]
   }
 }
