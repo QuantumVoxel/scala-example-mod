@@ -1,7 +1,9 @@
 package org.example.client
 
+import org.example.ExampleMod
+
 object ExampleClientHooks {
   def onTitleScreenInit(): Unit = {
-    System.out.println("Hello from client Mixin!")
+    ExampleMod.LOGGER.info("Hello from client Mixin!")
   }
 }
