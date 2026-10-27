@@ -14,6 +14,9 @@
   "entrypoints": {
     "main": [
       "org.example.ExampleMod"
+    ],
+    "client": [
+      "org.example.client.ExampleModClient"
     ]
   }
 }
