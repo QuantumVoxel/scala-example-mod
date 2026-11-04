@@ -9,7 +9,7 @@ object ModBlocks {
   val EXAMPLE_BLOCK: Block = register("example_block", new Block(new Block.Settings().strength(1.5f)))
 
   private def register(name: String, block: Block): Block = {
-    Registries.BLOCK.register(new Key(ExampleMod.MOD_ID, name), block)
+    Registries.BLOCK.register(ExampleMod.key(name), block)
     block
   }
 

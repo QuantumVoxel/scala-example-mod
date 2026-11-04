@@ -10,7 +10,7 @@ object ModItems {
   val EXAMPLE_BLOCK_ITEM: Item = register("example_block", new BlockItem(new Item.Settings(), () => ModBlocks.EXAMPLE_BLOCK))
 
   private def register(name: String, item: Item): Item = {
-    Registries.ITEM.register(new Key(ExampleMod.MOD_ID, name), item)
+    Registries.ITEM.register(ExampleMod.key(name), item)
     item
   }
 
